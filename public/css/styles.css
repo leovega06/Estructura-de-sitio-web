@@ -27,6 +27,12 @@ header.encabezado{
     font-size: 12px;
 }
 
+header .lupa{
+    display:inline-block ;
+    border: 1px;
+    background-color: white;
+}
+
 header .compra{
     text-align: center;    
 }
