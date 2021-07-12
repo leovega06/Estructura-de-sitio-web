@@ -27,6 +27,16 @@ header.encabezado{
     font-size: 12px;
 }
 
+header .mercado{
+    display: block;
+}
+
+header .barra{
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+}
+
 header .lupa{
     display:inline-block ;
     border: 1px;
@@ -49,17 +59,48 @@ header .burger-menu {
     color: white;
     background-color:  #1259c3;
     border-radius: 5px;
+    margin-bottom: 20px;   
     
    }
 
 header .hamb{
-       text-align: center;
-       padding-bottom: 20px;
-   }
+    text-align: center;  
+    padding-top: 20px;
+}
+
+header .menu{
+    display: none;
+}
+
+
 
   
 
 /*main*/
+
+main img{
+    width: 90%;
+    text-align: center;
+}
+
+main .imgmain{
+    width: 100%;
+}
+
+main section{
+    padding-top: 10px;
+}
+
+main section article{
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    padding: 10px 10px;
+}
+
+main .envio, main .descuento{
+    color: #39b54a;
+}
+
 
 
 main section h3{
@@ -75,13 +116,14 @@ main section article p.descuento{
 }
 
 main section article h4{
-    font-size: 16px;
+    display:none ;
 }
 
 /*footer*/
 
 footer{
     text-align: center;
+    padding-top: 40px;
 }
 
 footer section a{
@@ -93,6 +135,66 @@ footer section h4.slr{
     text-align: left;
 }
 
+
+
+/*tablet*/
+
+@media (min-width : 481px){
+
+    /*header*/
+
+header .menu{
+    display: block;
+    color: #03264C;
+    padding-left: 20px;
+    }   
+
+header .burger-menu {
+    display: none;
+    }            
+
+    /*main*/
+main section article{
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+main section article h4{
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    /*footer*/
+}
+
+/*desktop*/
+@media (min-width:769px){
+
+
+    /*header*/
+
+header .menu{
+    display: block;
+    color: #03264C;
+    padding-left: 20px;
+    }
+
+header .burger-menu {
+    display: none;
+} 
+
+ /*main*/
+main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+main section article h4{
+        display: inline-block;
+        font-size: 16px;
+    }    
+    
+ /*footer*/
+}
 
 
 
