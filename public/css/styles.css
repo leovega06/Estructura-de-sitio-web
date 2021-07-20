@@ -16,10 +16,14 @@ Verde: #39b54a;
 
 *{
     font-family: 'Roboto', sans-serif;
-     
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+        
 }
 
 /*header*/
+
 
 
 header.encabezado{
@@ -27,24 +31,71 @@ header.encabezado{
     font-size: 12px;
 }
 
-header .mercado{
-    display: block;
+header .encab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 10px 0 20px;
 }
+
+header .mercado{
+    display: inline-block;
+    width: 45%;
+}
+
+/*header .barra{
+    display: inline-block;
+    background-color: white;
+    width: 45%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    
+}*/
+
+/*header .lupa{
+    display:inline-block ;
+    border: 5px;
+    background-color: white;
+    width: 3%;
+    font-size: 18px;
+    margin: auto;
+    
+}*/
 
 header .barra{
     display: inline-block;
     background-color: white;
-    border: 1px solid black;
+    width: 45%;
+    margin: 13px 0 13px 13px;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    padding-right: 20px;
+    
 }
 
 header .lupa{
     display:inline-block ;
     border: 1px;
     background-color: white;
+    width: 5%;
+    font-size: 18px;
+    border-radius: 0 5px 5px 0 ;
+    padding: 7px 7px 5px 0;
+    margin: 13px 0 0 0;
+
 }
 
 header .compra{
-    text-align: center;    
+    display:inline-block;
+    align-self: center;
+    padding-top: 25px;
+    
+}
+
+header .menu{
+    display: none;
 }
 
 header nav ul{
@@ -52,29 +103,23 @@ header nav ul{
 }
 
 header .burger-menu {
-    text-align: center;
+    
     display: inline-block;
     width: auto;
     padding: 10px;
     color: white;
     background-color:  #1259c3;
     border-radius: 5px;
-    margin-bottom: 20px;   
-    
-   }
+    margin-right: 0%;
+    margin-bottom: 20px; 
+}
 
 header .hamb{
-    text-align: center;  
-    padding-top: 20px;
+    text-align: center;
+    padding-top: 30px;
+    
 }
 
-header .menu{
-    display: none;
-}
-
-
-
-  
 
 /*main*/
 
@@ -91,32 +136,70 @@ main section{
     padding-top: 10px;
 }
 
+
 main section article{
     display: inline-block;
     border: 1px solid #ebebeb;
     padding: 10px 10px;
 }
 
-main .envio, main .descuento{
+main .envio{
+    display:block;
+    border-radius:50%;
+    border: 2px solid #39b54a ;
+    background-color: white;
     color: #39b54a;
+    /*margin-left: 80%;*/
+    padding: 3px;
+    width: 30px;
+    margin-left: 80%;
+        
 }
 
+/*main .envio{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}*/
 
+main .descuento{
+    color: #39b54a;
+    
+}
 
 main section h3{
     font-size: 24px;
+    padding-bottom: 15px;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
 }
+
+
 
 main section article p.precio{
     font-size: 18px;
+    display: inline-block;
+    width: 40%;
+    padding-left: 5%;
 }
 
 main section article p.descuento{
     font-size: 16px;
+    display: inline-block;
 }
 
 main section article h4{
-    display:none ;
+    display:block ;
+    width: 100%;
 }
 
 /*footer*/
@@ -126,6 +209,10 @@ footer{
     padding-top: 40px;
 }
 
+footer section{
+    margin-bottom: 30px;
+}
+
 footer section a{
     font-size: 40px;
     color: #1259c3;
@@ -133,6 +220,7 @@ footer section a{
 
 footer section h4.slr{
     text-align: left;
+    padding-top: 35px ;
 }
 
 
@@ -143,25 +231,123 @@ footer section h4.slr{
 
     /*header*/
 
-header .menu{
-    display: block;
-    color: #03264C;
-    padding-left: 20px;
-    }   
 
-header .burger-menu {
-    display: none;
+
+    header .encab{
+        display: flex;
+        flex-wrap: wrap;
+    }   
+    
+    header .mercado{
+        display: inline-block;
+        width: 25%;
+    }
+    
+    header .barra{
+        display: inline-block;
+        background-color: white;
+        width: 25%;
+        border-radius: 5px 0 0 5px;
+        padding: 2px;
+        font-size: 10px;
+        
+        
+    }
+    
+    header .lupa{
+        display:inline-block ;
+        border: 1px;
+        background-color: white;
+        width: 4%;
+        font-size: 10px;
+        border-radius: 0 5px 5px 0 ;
+        padding: 2px ;
+        text-align: end;
+        
+    }
+    
+    header .compra{
+        display:inline-block;
+        padding: 0;
+        width: 40%;
+        text-align: end;
+        padding-right: 10px;
+        /*white-space: nowrap;*/
+    }
+
+    header .menu{
+        display:inline-flex;
+        flex-wrap: wrap;
+        color: #03264C;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    
+    header .menu1{
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    header nav ul li{
+        padding: 10px;
+    }
+
+    header .menu2{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    header .hamb{
+        display: none;
+        
+    }
+
+    header .burger-menu {
+        display: none;
     }            
 
     /*main*/
-main section article{
-
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
+    main section{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
     }
 
-main section article h4{
+    /*main section h3{
+        white-space: nowrap;
+    }*/
+
+    main section article{
+        width: 40%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-bottom: 20px;
+    }
+
+    main section article h4{
         display: inline-block;
         font-size: 16px;
+    }
+
+    main section article p.precio{
+        font-size: 15px;
+    }
+
+    main section article p.descuento{
+        font-size: 13px;
+        margin-bottom: 8px;
+        padding-left: 10px;
+    }
+
+    main section article h4{
+        font-size: 13px;
     }
 
     /*footer*/
@@ -173,25 +359,79 @@ main section article h4{
 
     /*header*/
 
-header .menu{
+     header .menu{
     display: block;
     color: #03264C;
     padding-left: 20px;
     }
 
-header .burger-menu {
-    display: none;
-} 
-
- /*main*/
-main section article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    header .menu{
+        display:inline-flex;
+        flex-wrap: wrap;
+        color: #03264C;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    
+    header .menu1{
+        display: flex;
+        align-items: flex-end;
+        width: 50%;
+        padding-right: 20px;
     }
 
-main section article h4{
+    header nav ul li{
+        padding: 10px;
+    }
+
+    header .menu2{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    header .burger-menu {
+        display: none;
+    } 
+
+ /*main*/
+    main section{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+
+/*main section h3{
+    white-space: nowrap;
+}*/
+
+    main section article{
+        width: 20%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-bottom: 20px;
+    }
+
+    main section article h4{
         display: inline-block;
         font-size: 16px;
-    }    
+    } 
+    
+    main section article p.precio{
+        font-size: 15px;
+    }
+
+    main section article p.descuento{
+        font-size: 13px;
+        margin-bottom: 8px;
+        padding-left: 10px;
+    }
+
+    main section article h4{
+        font-size: 13px;
+    }
     
  /*footer*/
 }
