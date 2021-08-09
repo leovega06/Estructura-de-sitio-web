@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import url('login.css');
+@import url('register.css');
+
 /*
 font-family: 'Roboto', sans-serif;
 */
@@ -39,9 +42,12 @@ header .encab{
     padding: 20px 10px 0 20px;
 }
 
+header .imgmera{
+    width: 40%;
+}
+
 header .mercado{
     display: inline-block;
-    width: 45%;
 }
 
 /*header .barra{
@@ -231,7 +237,9 @@ footer section h4.slr{
 
     /*header*/
 
-
+    header .imgmera{
+        width: 28%;
+    }
 
     header .encab{
         display: flex;
@@ -240,7 +248,7 @@ footer section h4.slr{
     
     header .mercado{
         display: inline-block;
-        width: 25%;
+        
     }
     
     header .barra{

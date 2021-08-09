@@ -1,0 +1,87 @@
+.register main{
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: rgb(236, 236, 236);
+}
+
+.register main article form .todo{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    
+}
+
+.register main article form .reg-box{
+    width: 80%;
+    padding: 15px 0;
+
+}
+
+.register main article form label{
+    width: 70%;
+}
+
+.register main article form .fecha{
+    padding: 0 0 10px 0;
+}
+
+.register main article form .domicilio{
+    padding: 10px 0;
+}
+
+.register main article form .perfil-us{
+    padding: 0 0 10px 0;
+}
+
+.register main article form .lab-comp, .lab-vend{
+    margin: 0 20px 0 0;
+}
+
+.register main article form .inp-comp, .inp-vend{
+    margin: 0 0 0 10px;
+}
+
+.register main article form .inter{
+    padding: 10px 0;
+}
+
+.register main article form .foto-usua{
+    padding: 10px 0;
+}
+
+.register main article form .contraseña1{
+    padding: 10px 0;
+}
+
+.register main article form .enviar1{
+    padding: 10px 0;
+    display: inline-block;
+    padding-right: 30px;
+
+}
+
+.register main article form .but-enviar1{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: blue;
+    
+}
+
+.register main article form .but-enviar1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.register main article form .borrar{
+    display: inline-block;
+
+}
+
+.register main article form .inp-borrar{
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
